@@ -116,7 +116,7 @@ header {
 
 .pricing{
   width: 100%;
-
+  z-index: 2;
   color:black;
   text-align: center;
   padding: 1rem 0 5rem 0;
@@ -184,7 +184,52 @@ header {
   transform: translateY(50%);
 }
 /*************************Fearutres*******************/
+.features{
+  overflow: hidden;
+  color:var(--darkColor);
+  
+  height: 100vh;
+  position: relative;
+  padding: 5rem 0;
+}
+#featuresBg{
+  z-index: 0;
+  position: absolute;
+  transform: rotate(-18.25deg);
+  width: 48rem;
+  right: 50%;
+  bottom: -15%;
+}
+.featuresRow{
+  align-items: center;
+}
+.featuresRow>.col{
+  z-index: 1;
+}
+.featuresImg{
+  flex-basis:45%;
+  flex-grow:0;
+}
+.featuresText{
+  padding-left: 20%;
+}
+.featuresText>h1{
+  font-size: 3.5rem;
+  font-weight: 400;
+  color:black;
+  padding-bottom:1rem ;
+}
+.featuresText>p{
+  font-size: 1.6rem;
+  padding-bottom:1rem ;
 
+}
+.featuresText>ul>li{
+  font-size: 1.5rem;
+  list-style-position: inside;
+  padding-bottom:.2rem ;
+
+}
 /*************************ANIMATION*******************/
 .slide-in-bottom {
 	-webkit-animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
