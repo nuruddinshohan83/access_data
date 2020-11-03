@@ -20,3 +20,29 @@ const lpObserver = new IntersectionObserver(function(entries,lpObserver){
     })
 },lpOption)
 lpObserver.observe(lp)
+
+
+
+let preBtn = document.querySelector("#pre")
+let nextBtn = document.querySelector("#next")
+let slider = document.querySelector(".reviewSlider")
+
+let childNum = slider.childElementCount;
+slider.style.width = ""+(childNum*33.33) +"%"
+
+let nextCounter = 0;
+
+let childWidth = 100/childNum;
+
+console.log(childNum);
+console.log(slider)
+preBtn.addEventListener("click",()=>{
+  
+
+})
+nextBtn.addEventListener("click",()=>{
+    console.log("next btn clicked")
+    nextCounter++;
+    console.log(childWidth)
+    slider.style.transform = "translateX(-"+(childWidth*nextCounter)+"%)"
+})

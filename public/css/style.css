@@ -319,6 +319,75 @@ header {
 #dForDBox4{
   background: linear-gradient(315.15deg, rgba(152, 149, 226, 1) 1.66%, rgba(205, 105, 183, 1) 96.14%), rgba(152, 149, 226,1);
 }
+/********************Reviews************************/
+#review{
+  background: linear-gradient(263.91deg, #CD69B7 0%, #998BE2 50.27%, #91EAE4 100.55%), #FFFFFF;
+
+  padding: 3.5rem 0;
+}
+.reviewContainer>h1{
+  font-size: 3.6rem;
+  font-weight: 500; 
+  padding: 1rem 0 2rem 0;
+  text-align: center;
+}
+.reviewMain{
+  
+  border: yellow 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviewMain>img{
+  flex-basis: 3.5rem;
+}
+.reviewMain>div{
+  width: 90%;
+}
+.overflowController{
+  border: red 2px solid;
+  overflow-x: hidden;
+  
+}
+.reviewSlider{
+
+ 
+  display: inline-flex;
+  border:2px black solid;
+  justify-content: space-between;
+}
+.reviewBox{
+  box-sizing: border-box;
+  position: relative;
+  color: #808080;
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 16px;
+  width: 12.5rem;
+  height: 12.5rem;
+  
+}
+.reviewBox>h2,.reviewBox>p,.pp{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.quotes{
+  width:2.2rem;
+  position: absolute;
+  top: 35%;
+  left: 15%;
+}
+.pp{
+  padding: .7rem 0 1.4rem 0;
+}
+.reviewBox>h2{
+  font-size: 1.2rem;
+  padding: .5rem 0;
+}
+.reviewBox>p{
+  font-size: .9rem;
+}
 /*************************ANIMATION*******************/
 .slide-in-bottom {
 	-webkit-animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
