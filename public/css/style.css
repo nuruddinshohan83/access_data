@@ -230,6 +230,95 @@ header {
   padding-bottom:.2rem ;
 
 }
+/************************************************/
+#dForD{
+  height: 100vh;
+  color: var(--darkColor);
+ 
+}
+#dForD>.container{
+
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+.dForDTitle{
+  flex-basis: 40%;
+  margin-top: 2rem;
+}
+.dForDTitle>h1{
+  color: #000000;
+  font-size: 3.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.dForDTitle>p{
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+.dForDTitle>a{
+
+  background: linear-gradient(266.92deg, #CD69B7 0%, #8CA2E7 51.56%, #91EAE4 100%), #C4C4C4;
+  border-radius: 28px;
+  color:white;
+  padding: .3rem 2rem;
+  font-size: 1.2rem;
+}
+.dForDDtails{
+  flex-basis: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.dForDDtails>div{
+  position: relative;
+  flex-basis: 40%;
+  flex-grow: 0;
+  margin: .5rem;
+  color: #ffffff;
+  
+}
+.dForDDtails>div>div{
+
+  height: 12.5rem;
+  width: 12.5rem;
+}
+.dForDBoxBg{
+  position: absolute;
+  top:-.5rem;
+  left: -.5rem;
+  background: linear-gradient(226.39deg, rgba(152, 149, 226, 0.6) 1.31%, rgba(205, 105, 183, 0.6) 98.34%);
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border-radius: 18px;
+}
+.dForDBoxMain{
+  padding: 1.2rem ;
+  position: relative;
+  z-index: 1;
+  border-radius: 18px;
+}
+.dForDBoxMain>h2{
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: .5rem 0;
+}
+.dForDBoxMain>p{
+  font-size: .8rem;
+}
+#dForDBox1{
+  background: linear-gradient(133deg, rgba(152, 149, 226, 1) 1.74%, rgba(205, 105, 183, 1) 94.52%), rgba(152, 149, 226, 1 );}
+#dForDBox2{
+  background: linear-gradient(227.18deg, #9895E2 1.54%, #CD69B7 96.54%), rgba(152, 149, 226, 0.5);
+}
+#dForDBox3{
+  background: linear-gradient(44.3deg, rgba(152, 149, 226, 1) 2.81%, rgba(205, 105, 183, 1) 97.03%), rgba(152, 149, 226, 1);
+}
+#dForDBox4{
+  background: linear-gradient(315.15deg, rgba(152, 149, 226, 1) 1.66%, rgba(205, 105, 183, 1) 96.14%), rgba(152, 149, 226,1);
+}
 /*************************ANIMATION*******************/
 .slide-in-bottom {
 	-webkit-animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
