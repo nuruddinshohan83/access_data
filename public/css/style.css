@@ -4,6 +4,7 @@
   --bgColorThree: #cd69b7;
   --textColor: #ffffff;
   --darkColor:#808080 ;
+  --footerBg :#1E2833;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   color: var(--textColor);
@@ -262,7 +263,7 @@ header {
   margin: 0 auto;
   padding: 4rem 0;
 }
-dForDContainer
+.dForDContainer
 {
   justify-content: center;
 }
@@ -290,6 +291,8 @@ dForDContainer
 }
 .dForDDtails{
   flex-basis: 60%;
+  padding: 0 2rem;
+  margin-bottom: 3rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -319,6 +322,7 @@ dForDContainer
   border-radius: 18px;
 }
 .dForDBoxMain{
+  margin: 0 ;
   padding: 1.2rem ;
   position: relative;
   z-index: 1;
@@ -343,6 +347,73 @@ dForDContainer
 #dForDBox4{
   background: linear-gradient(315.15deg, rgba(152, 149, 226, 1) 1.66%, rgba(205, 105, 183, 1) 96.14%), rgba(152, 149, 226,1);
 }
+/*********************Slider*********************/
+.slider-container{
+  margin:  auto;
+  width: 80%;
+  height:  auto;
+  background-color: lightsteelblue;
+  border: #000000 2px solid;
+  overflow-x: hidden;
+
+}
+.slider-container>ul{
+  display: inline-flex;
+  padding: 0%;
+}
+.slider-container>ul>li{
+  box-sizing: border-box;
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  border: 5px green solid;
+  background-color: yellow;
+  margin: 0 2rem 0 0 ;
+}
+/*********************Footer*********************/
+.footer{
+ margin-top: 2rem;
+background-color: var(--footerBg);
+height: 40vh;
+}
+.footer>.row
+{
+  justify-content: center;
+  align-items: center;
+  margin: 0 10% ;
+  padding: 1.5rem 0 0 0 ;
+}
+.footerText>h1{
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.footerText>p{
+  font-size: .8rem;
+  margin-bottom: 1.5rem;
+}
+.footerText>a{
+  text-decoration: none;
+  background: linear-gradient(266.92deg, #CD69B7 0%, #8CA2E7 51.56%, #91EAE4 100%), #C4C4C4;
+  border-radius: 24px;
+  color: white;
+  padding: .3rem 2rem;
+  font-size: 1rem;
+}
+.footerText{
+  flex-basis: 70%;
+}
+.footermanu>ul{
+  list-style-type: none;
+}
+.footermanu>ul>li{
+  margin: .5rem 0;
+}
+/*  
+
+
+
+
 /*************************ANIMATION*******************/
 .slide-in-bottom {
 	-webkit-animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -508,6 +579,9 @@ dForDContainer
     margin-top: 9rem;
     
 
+  }
+  .dForDDtails{
+    padding: 0 3rem;
   }
   .dForRow>.col{
     flex-basis: 100%;

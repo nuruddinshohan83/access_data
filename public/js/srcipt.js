@@ -20,3 +20,21 @@ const lpObserver = new IntersectionObserver(function(entries,lpObserver){
     })
 },lpOption)
 lpObserver.observe(lp)
+const pricingSecOption= {
+    root: null,
+    rootMargin: '0px',
+    threshold: .5
+  
+}
+const pricingSec = document.querySelector('.pricing')
+
+const pricingSecObserver = new IntersectionObserver(function(entries,pricingSecOption){
+    entries.forEach(entry=>{
+        if(entry.isIntersecting)
+        {
+            console.log("pricing section page is visible") //for debuging 
+            
+        }
+    })
+},lpOption)
+pricingSecObserver.observe(pricingSec)
